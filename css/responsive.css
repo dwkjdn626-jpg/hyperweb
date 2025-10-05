@@ -1,0 +1,186 @@
+/* ====== BOTÓN BURGER ===== */
+.burger{
+   display:none;
+   width:42px;
+   height:42px;
+   border-radius:12px;
+   border:1px solid rgba(255,255,255,0.1);
+   background:var(--panel);
+   cursor:pointer;
+   place-items:center;
+}
+.burger i{
+   width:20px;
+   height:2px;
+   background:#fff;
+   position:relative;
+   display:block;
+   margin:0 auto;
+}
+.burger i::before,.burger i::after{
+   content:"";
+   position:absolute;
+   left:0;
+   width:100%;
+   height:2px;
+   background:#fff;
+}
+.burger i::before{top:-6px;}
+.burger i::after{top:6px;}
+
+/* ====== MENÚ MÓVIL ===== */
+.mobile{
+   position:fixed;
+   inset:0;
+   background:rgba(11,18,32,.65);
+   backdrop-filter:blur(6px);
+   display:none;
+   z-index:1000;
+}
+.mobile .sheet{
+   position:absolute;
+   left:-260px;
+   top:0;
+   bottom:0;
+   width:250px;
+   background:var(--bg-soft);
+   border-right:1px solid rgba(0,0,0,.1);
+   border-radius:0 16px 16px 0;
+   padding:20px;
+   display:flex;
+   flex-direction:column;
+   gap:10px;
+   transition:.3s ease;
+}
+.mobile.show{display:block;}
+.mobile.show .sheet{left:0;}
+.mobile a{
+   display:block;
+   padding:12px 14px;
+   border-radius:10px;
+   color:var(--text);
+   font-weight:600;
+}
+.mobile a:hover{background:var(--panel);color:var(--text);}
+.close-btn{
+   align-self:flex-end;
+   font-size:24px;
+   background:none;
+   border:none;
+   cursor:pointer;
+   margin-bottom:10px;
+   color:var(--text);
+}
+
+
+/* ====== MEDIA QUERIES ===== */
+@media (max-width:980px){
+   .navlinks{display:none;}
+   .burger{display:inline-grid;}
+   .grid-3{grid-template-columns:repeat(2,1fr);}
+   .hero .wrap{grid-template-columns:1fr;text-align:center;}
+   .hero img{margin:auto;}
+   .foot{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+   .grid-3{grid-template-columns:1fr;}
+   .hero{padding:60px 0 30px;}
+   .hero h1{font-size:1.8rem;}
+   .hero .lead{font-size:1rem;}
+   .foot{grid-template-columns:1fr;text-align:center;}
+   .foot div{margin-bottom:20px;}
+   .foot .badges{justify-content:center;}
+}
+/* Chat flotante para móviles */
+#whatsappWidget {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 10000;
+  width: auto;
+}
+
+#whatsappToggle {
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+}
+
+#whatsappChat {
+  position: absolute;
+  bottom: 55px;
+  right: 0;
+  width: 280px;
+  max-height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+#whatsappHeader {
+  padding: 10px;
+  font-weight: bold;
+  background: #2f6dff;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+#whatsappBody {
+  padding: 8px;
+  flex: 1;
+  overflow-y: auto;
+  font-size: 0.85rem;
+}
+
+.bot-msg, .user-msg {
+  margin: 5px 0;
+  padding: 6px 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.bot-msg {
+  background: #f1f1f1;
+  font-size: 0.85rem;
+}
+
+.user-msg {
+  background: #2f6dff;
+  color: #fff;
+  margin-left: auto;
+  font-size: 0.85rem;
+}
+
+#whatsappFooter {
+  display: flex;
+  gap: 5px;
+  padding: 6px;
+}
+
+#whatsappInput {
+  flex: 1;
+  padding: 5px 8px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#whatsappSend {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  border: none;
+  background: #2f6dff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mostrar solo en pantallas móviles */
+@media (min-width: 641px) {
+  #whatsappChat,
+  #whatsappToggle {
+    display: none !important;
+  }
+}
