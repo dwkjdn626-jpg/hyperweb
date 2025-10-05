@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Inicio del sitio Hyperweb — Soluciones digitales, desarrollo web y optimización online." />
+<link rel="icon" href="assets/favicon.svg" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+<script defer src="../js/script.js"></script>
+<script defer src="../js/menu.js"></script>
+<script defer src="../js/whatsapp.js"></script>
+<title>Inicio - HYPERWEB</title>
+</head>
+<body>
+
+
+<header class="site-header" role="banner">
+  <nav class="nav" aria-label="Principal">
+    <a class="brand" href="../html/index.html">
+      <div class="logo"><img src="../img/logo tipo.png" alt="HYPERWEB"></div>
+    </a>
+    <!-- Botón hamburguesa -->
+    <button class="burger" id="openMenu" aria-label="Abrir menú">☰</button>
+    <!-- Menú normal -->
+    <ul class="navlinks">
+      <li><a href="../html/index.html">Inicio</a></li>
+      <li><a href="../html/sobre.html">Nosotros</a></li>
+      <li><a href="../html/servicios.html">Servicios</a></li>  
+      <li><a href="../html/blog.html">Blog</a></li>
+      <li><a href="../html/documentacion.html">Documentación</a></li>
+      <li><a href="../html/contacto.html" class="btn primary">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Botón Burger -->
+<button class="burger" id="openMenu" aria-label="Abrir menú"><i></i></button>
+
+<!-- Botón Burger -->
+<button class="burger" id="openMenu" aria-label="Abrir menú"><i></i></button>
+
+<!-- Menú Móvil -->
+<div id="mobileMenu" class="mobile" aria-hidden="true">
+  <div class="sheet">
+    <!-- Logo Arriba -->
+    <div class="mobile-logo">
+      <img src="../img/logo tipo.png" alt="HYPERWEB">
+    </div>
+
+    <!-- Enlaces del Menú -->
+    <nav class="mobile-nav">
+      <a href="../html/index.html">Inicio</a>
+      <a href="../html/sobre.html">Nosotros</a>
+      <a href="../html/servicios.html">Servicios</a>
+      <a href="../html/blog.html">Blog</a>
+      <a href="../html/documentacion.html">Documentación</a>
+    </nav>
+
+    <!-- Botón Abajo -->
+    <div class="mobile-footer">
+      <a href="../html/contacto.html" class="btn primary">Iniciar sesión</a>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="hero hero-section">
+  <div class="wrap">
+    <div>
+      <h1 data-edit="contact.title" contenteditable="false">Cuéntanos tu proyecto digital</h1>
+      <p class="lead" data-edit="contact.desc" contenteditable="false">En HYPERWEB transformamos tus ideas en soluciones web profesionales y escalables.</p>
+      <div class="cta"><a class="btn" href="faq.html">Más información</a></div>
+    </div>
+    <div class="hero-media card">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Equipo colaborando">
+      <div class="mini-grid">
+        <div class="card">
+          <div class="chip"></div>
+          <strong>Desarrollo Web Profesional</strong>
+          <p class="muted">Soluciones modernas, adaptadas a tus necesidades y con rendimiento optimizado.</p>
+        </div>
+        <div class="card">
+          <div class="chip chip-green"></div>
+          <strong>Planes Flexibles</strong>
+          <p class="muted">Opciones de pago accesibles y escalables según el tamaño de tu proyecto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap grid grid-3">
+    <div class="card">
+      <form id="contactForm" onsubmit="return false;">
+        <div class="row">
+          <input placeholder="Nombre completo" required />
+          <input type="email" placeholder="Correo electrónico" required />
+        </div>
+        <div class="row">
+          <select>
+            <option>Presupuesto estimado</option>
+            <option>$200-$700</option>
+            <option>$700-$2,500</option>
+            <option>$2,000+</option>
+          </select>
+          <input placeholder="Teléfono" />
+        </div>
+        <textarea rows="4" placeholder="Describe tu proyecto y objetivos" required></textarea>
+        <button class="btn primary">Enviar</button>
+        <div id="formMsg" class="muted" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+    <div class="card">
+      <h3>Ubicación y horarios</h3>
+      <p class="muted">San Salvador — Lunes a Viernes, 9:00–18:00</p>
+      <p class="muted">Atendemos proyectos de todo tipo y tamaño, ofreciendo soluciones digitales personalizadas.</p>
+    </div>
+    <div class="card map">
+      <iframe title="Mapa" src="https://maps.google.com/maps?q=San%20Salvador&t=&z=11&ie=UTF8&iwloc=&output=embed" width="100%" height="340" style="border:0"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <a class="brand" href="../html/index.html">
+      <div class="logo">
+        <img src="../img/logo tipo.png" alt="HYPERWEB">
+      </div>
+    </a>
+
+    <div>
+      <h4>Nosotros</h4>
+      <a href="../html/sobre.html">Quiénes somos</a><br>
+      <a href="../html/servicios.html">Servicios</a><br>
+      <a href="portafolio.html">Portafolio</a>
+    </div>
+
+    <div>
+      <h4>Recursos</h4>
+      <a href="../html/blog.html">Blog</a><br>
+      <a href="../html/documentacion.html">Documentación</a><br>
+      <a href="#">FAQ</a>
+    </div>
+
+    <div>
+      <h4>Contacto</h4>
+      <p class="muted">info@hyperweb.com</p>
+      <p class="muted">+51 999 999 999</p>
+      <div class="badges">
+        <a class="pill" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a class="pill" href="https://twitter.com/" target="_blank">Twitter</a>
+        <a class="pill" href="https://www.instagram.com/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="copy center">&copy; 2025 Hyperweb. Todos los derechos reservados.</p>
+</footer>
+
+<a href="#" class="to-top" id="toTop" aria-label="Volver arriba">↑</a>
+<div id="chat-container">
+  <div id="chat-button">💬</div>
+  <div id="chat-box">
+    <div id="chat-header">
+      <span>Chat de Soporte</span>
+      <button id="chat-close">✕</button>
+    </div>
+    <div id="chat-messages"></div>
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." autocomplete="off"/>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

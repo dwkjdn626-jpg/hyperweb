@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Inicio del sitio Hyperweb — Soluciones digitales, desarrollo web y optimización online." />
+<link rel="icon" href="assets/favicon.svg" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="responsive.css" />
+<script defer src="script.js"></script>
+<script defer src="menu.js"></script>
+<script defer src="whatsapp.js"></script>
+<title>Inicio - HYPERWEB</title>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <nav class="nav" aria-label="Principal">
+    <a class="brand" href="index.html">
+      <div class="logo"><img src="logo tipo.png" alt="HYPERWEB"></div>
+    </a>
+    <!-- Botón hamburguesa -->
+    <button class="burger" id="openMenu" aria-label="Abrir menú">☰</button>
+    <!-- Menú normal -->
+    <ul class="navlinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>  
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="documentacion.html">Documentación</a></li>
+      <li><a href="contacto.html" class="btn primary">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Botón Burger -->
+<button class="burger" id="openMenu" aria-label="Abrir menú"><i></i></button>
+
+<!-- Botón Burger -->
+<button class="burger" id="openMenu" aria-label="Abrir menú"><i></i></button>
+
+<!-- Menú Móvil -->
+<div id="mobileMenu" class="mobile" aria-hidden="true">
+  <div class="sheet">
+    <!-- Logo Arriba -->
+    <div class="mobile-logo">
+      <img src="logo tipo.png" alt="HYPERWEB">
+    </div>
+
+    <!-- Enlaces del Menú -->
+    <nav class="mobile-nav">
+      <a href="index.html">Inicio</a>
+      <a href="sobre.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="blog.html">Blog</a>
+      <a href="documentacion.html">Documentación</a>
+    </nav>
+
+    <!-- Botón Abajo -->
+    <div class="mobile-footer">
+      <a href="contacto.html" class="btn primary">Iniciar sesión</a>
+    </div>
+  </div>
+</div>
+
+
+ 
+<section class="hero hero-section">
+  <div class="wrap">
+    <div>
+      <h1 data-edit="home.title" contenteditable="false">Impulsamos tu negocio con soluciones digitales innovadoras</h1>
+      <p class="lead" data-edit="home.desc" contenteditable="false">Desarrollamos sitios web a medida, optimizamos tu presencia online y creamos experiencias digitales que convierten visitantes en clientes.</p>
+      <div class="cta">
+        <a class="btn primary" href="precios.html">Ver planes</a> 
+      </div>
+    </div>
+    <div class="hero-media card">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Equipo colaborando">
+      <div class="mini-grid">
+        <div class="card">
+          <div class="chip"></div>
+          <strong>Diseño Web Profesional</strong>
+          <p class="muted">Sitios modernos, responsive y con interfaces intuitivas para maximizar la experiencia del usuario.</p>
+        </div>
+        <div class="card">
+          <div class="chip chip-green"></div>
+          <strong>Soluciones Digitales Completas</strong>
+          <p class="muted">Desde microempresas hasta grandes marcas, adaptamos nuestras soluciones a tus necesidades.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="features">
+  <div class="wrap">
+    <div class="title">
+      <h2>Lo que hacemos en HYPERWEB</h2>
+      <p>Combinamos diseño, desarrollo y análisis de datos para ofrecer soluciones digitales eficientes, escalables y personalizadas.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon">📐</div>
+       <h3>Arquitectura Web</h3>
+       <p class="muted">Estructuras de sitios optimizadas para SEO, rendimiento y escalabilidad.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎨</div>
+         <h3>UX/UI y Branding</h3>
+           <p class="muted">Diseños atractivos, consistentes con la identidad de tu marca y centrados en la experiencia del usuario.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🧪</div>
+       <h3>Investigación y Estrategia</h3>
+       <p class="muted">Analizamos datos, tendencias y usuarios para tomar decisiones estratégicas y medibles.</p>
+      </div>
+    </div>
+    <p class="center"><a class="btn" href="documentacion.html">Ver metodología completa</a></p>
+  </div>
+</section>
+
+<!-- Casos de éxito -->
+<section>
+  <div class="wrap">
+    <div class="title center">
+      <h2>Proyectos destacados</h2>
+    </div>
+    <div class="grid grid-3 gallery">
+      <a class="shot card" href="caso-eco.html">
+        <img src="https://images.unsplash.com/photo-1456615074700-1dc12aa7364d?q=80&w=1200&auto=format&fit=crop" alt="EcoMarket e-commerce">
+        <strong>EcoMarket</strong>
+        <p class="muted">E-commerce sostenible, optimizado para compras rápidas y experiencia de usuario intuitiva.</p>
+      </a>
+      <a class="shot card" href="caso-salud.html">
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop" alt="Clínica SaludApp">
+        <strong>SaludApp</strong>
+        <p class="muted">Plataforma de gestión médica con recordatorios automáticos y control de agendas eficiente.</p>
+      </a>
+      <a class="shot card" href="caso-edu.html">
+        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200&auto=format&fit=crop" alt="Plataforma educativa">
+        <strong>EduPlus</strong>
+        <p class="muted">Entorno educativo online con seguimiento de progreso, recursos interactivos y métricas de aprendizaje.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<a href="#" class="to-top" id="toTop" aria-label="Volver arriba">↑</a>
+
+<!-- Footer -->
+<footer>
+  <div class="foot">
+    <a class="brand" href="index.html">
+      <div class="logo">
+        <img src="logo tipo.png" alt="HYPERWEB">
+      </div>
+    </a>
+
+    <div>
+      <h4>Nosotros</h4>
+      <a href="sobre.html">Quiénes somos</a><br>
+      <a href="servicios.html">Servicios</a><br>
+      <a href="portafolio.html">Portafolio</a>
+    </div>
+
+    <div>
+      <h4>Recursos</h4>
+      <a href="blog.html">Blog</a><br>
+      <a href="documentacion.html">Documentación</a><br>
+      <a href="#">FAQ</a>
+    </div>
+
+    <div>
+      <h4>Contacto</h4>
+      <p class="muted">info@hyperweb.com</p>
+      <p class="muted">+51 999 999 999</p>
+      <div class="badges">
+        <a class="pill" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a class="pill" href="https://twitter.com/" target="_blank">Twitter</a>
+        <a class="pill" href="https://www.instagram.com/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="copy center">&copy; 2025 Hyperweb. Todos los derechos reservados.</p>
+</footer>
+
+
+<!-- WhatsApp Chat Widget -->
+<div id="whatsappWidget">
+  <div id="whatsappToggle">💬</div>
+  <div id="whatsappChat" style="display:none; flex-direction: column;">
+    <div id="whatsappHeader"><strong>Hyperweb</strong></div>
+    <div id="whatsappBody">
+      <div class="bot-msg">👋 ¡Hola! Somos Hyperweb. ¿En qué podemos ayudarte?</div>
+    </div>
+    <div id="whatsappFooter">
+      <input type="text" id="whatsappInput" placeholder="Escribe tu mensaje..." />
+      <button id="whatsappSend">Enviar</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
